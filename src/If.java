@@ -14,11 +14,24 @@ public class If {
     }
 
     public void simples(int numero) {
-        if (numero < 18) ;{
-            System.out.println("Ainda é uma criança!");
+        if (numero <= 18)
+        {
+            System.out.println("É menor de idade!");
         } else {
-            if (numero >= 18) {
-            System.out.println("Já é maior de idade!");}
+            System.out.println("É maior de idade!");
+            }
+    }
+
+
+    public void elseIf(int numero) {
+        if (numero <= 7) {
+            System.out.println("Ainda é uma criança");
+        } else if (numero > 7 && numero < 18) {
+            System.out.println("É um adolescente!");
+        } else if (numero > 18 && numero < 60) {
+            System.out.println("É um adulto!");
+        } else {
+            System.out.println("Está na melhor idade!");
         }
     }
 }
